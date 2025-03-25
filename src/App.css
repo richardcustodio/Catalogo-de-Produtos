@@ -1,0 +1,82 @@
+/* src/App.css */
+.app-container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--card-background-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.app-subtitle {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  border-bottom: 2px solid #eee; /* Cor fixa, pode ser variável se necessário */
+  padding-bottom: 10px;
+}
+
+.form-container {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  border: 1px solid var(--card-border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Botão de troca de tema */
+.theme-toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+  z-index: 10; /* Garante que o botão fique acima de outros elementos */
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--secondary-hover-color);
+}
+
+/* Media query para telas menores (exemplo) */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .app-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .app-subtitle {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .theme-toggle-button {
+    top: 10px;
+    right: 10px;
+  }
+}

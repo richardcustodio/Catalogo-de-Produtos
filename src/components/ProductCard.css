@@ -1,0 +1,77 @@
+/* src/components/ProductCard.css */
+.product-card {
+  background-color: var(--card-background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--card-border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.product-price {
+  color: #555; /* Mantendo cor específica */
+  margin-bottom: 6px;
+}
+
+.product-description {
+  color: #777; /* Mantendo cor específica */
+  margin-bottom: 12px;
+  font-size: 0.9em;
+}
+
+.product-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-size: 0.85em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.product-image-container {
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden; /* Garante que a imagem não vaze do container */
+  border-radius: 6px; /* Opcional: bordas arredondadas para a imagem */
+}
+
+.product-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Opcional: manter uma proporção */
+  object-fit: cover; /* Garante que a imagem cubra o container sem distorcer */
+}
